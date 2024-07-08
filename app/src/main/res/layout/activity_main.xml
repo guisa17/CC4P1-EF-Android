@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttonConnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="27dp"
+        android:text="Conectar" />
+
+    <TextView
+        android:id="@+id/textViewConnectionStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/buttonConnect"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="20dp"
+        android:text="Estado de conexión: Desconectado" />
+
+    <Button
+        android:id="@+id/buttonUpload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/textViewConnectionStatus"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="20dp"
+        android:text="Subir Archivo" />
+
+    <TextView
+        android:id="@+id/textViewFileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/buttonUpload"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="20dp"
+        android:text="Archivo seleccionado: Ninguno" />
+
+    <Button
+        android:id="@+id/buttonSearchType1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/textViewFileName"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="20dp"
+        android:text="Buscar Ocurrencias" />
+
+    <Button
+        android:id="@+id/buttonSearchType2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/buttonSearchType1"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="20dp"
+        android:text="Verificar Existencia" />
+
+    <Button
+        android:id="@+id/buttonSearchType3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/buttonSearchType2"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="20dp"
+        android:text="Buscar Repeticiones" />
+
+    <TextView
+        android:id="@+id/textViewSearchType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/buttonSearchType3"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="20dp"
+        android:text="Opción seleccionada: Ninguna" />
+
+    <EditText
+        android:id="@+id/editTextKeyword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/textViewSearchType"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="20dp"
+        android:hint="Palabra Clave" />
+
+    <EditText
+        android:id="@+id/editTextParam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/editTextKeyword"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="20dp"
+        android:hint="Parámetro Extra"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/buttonSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/editTextParam"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="20dp"
+        android:text="Buscar" />
+
+    <ScrollView
+        android:id="@+id/scrollViewStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonSearch"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="33dp">
+
+        <TextView
+            android:id="@+id/textViewStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:textSize="16sp"
+            android:scrollbars="vertical" />
+    </ScrollView>
+
+</RelativeLayout>
